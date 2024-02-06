@@ -7,12 +7,20 @@ let package = Package(
         .library(
             name: "FBAudienceNetwork",
             targets: ["FBAudienceNetwork"]
+        ),
+        .library(
+            name: "MetaAdapter",
+            targets: ["MetaAdapter"]
         )
     ],
     targets: [
         .binaryTarget(
             name: "FBAudienceNetwork",
             path: "./FBAudienceNetwork.xcframework"
+        ),
+        .binaryTarget(
+            name: "MetaAdapter",
+            path: "./MetaAdapter.xcframework"
         )
     ]
 )
